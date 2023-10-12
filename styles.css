@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin: 50px;
+    text-align: center;
+}
+
+#container {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    width: 493px;
+    background-color: rgb(182, 160, 160);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.bx {
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    border-color: black;
+}
+
