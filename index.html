@@ -10,26 +10,30 @@
     
     <h1 class="heading">ETCH 'n SKETCH SPECTACULAR!!!</h1>
 
-    <div id="container">
-
+    <div id="container"> 
+  
     </div>
+
+    <div id="cont_2">
+    <button id="btn" onclick="changeGrid()">Change Grid Size</button>
+    </div>
+    
+<script src="scripts.js"></script>
 
 <script>
 
     //create grid
-
     for (x=0; x<256; x++) {
 
-        const bigBox = document.querySelector('#container');
+        var bigBox = document.querySelector('#container');
 
-        const littleBox = document.createElement('div');
+        var littleBox = document.createElement('div');
         littleBox.setAttribute('class', 'bx');
 
         bigBox.appendChild(littleBox);
     }
 
     //create event
-
         const tch = document.querySelectorAll('.bx');
 
            tch.forEach((bx) => {
@@ -38,17 +42,7 @@
                 });
            });
 
-        
-
-  
-
-
-
-
 </script>
-
-
-
 
 </body>
 </html>
