@@ -9,7 +9,12 @@ function changeGrid() {
             currContainer.removeChild(currContainer.firstChild);
         }
 
-    var gridSize = prompt("Enter number of squares per side.", "grid size");
+    var gridSize = prompt("Enter number of squares per side.", "max 100");
+    
+        if(gridSize > 100) {
+            changeGrid();
+        }       
+    
     var pxSize = 960/gridSize;
     console.log(pxSize);
 
@@ -39,9 +44,15 @@ function changeGrid() {
 
         const tch2 = document.querySelectorAll('.bx');
 
+         const colourSelect = ["blue", "red", "yellow", "purple", "orange", "green"];
+            console.log(colourSelect);
+
+         whichColour = Math.floor(Math.random() * 6);
+            console.log(whichColour);
+
         tch2.forEach((bx) => {
              bx.addEventListener('mouseover', function(e){
-             e.target.style.background = 'red';
+             e.target.style.background = colourSelect[whichColour];
              });
         });
 

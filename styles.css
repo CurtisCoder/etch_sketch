@@ -22,15 +22,18 @@
 
 #cont_2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #btn {
     color: white;
     font-style: bold;
     font-size: 32px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
     background-color: rgb(86, 26, 3);
+    border-width: thin;
+    border-radius: 25%;
 }
 
 .bx {
